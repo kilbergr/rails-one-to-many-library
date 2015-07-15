@@ -10,6 +10,35 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+// app/assets/javascripts/application.js
+
  *= require_tree .
  *= require_self
  */
+ 
+// First import  variables
+@import "bootswatch/Flatly/variables";
+
+// Then bootstrap itself
+@import "bootstrap";
+
+// And finally bootswatch style itself
+@import "bootswatch/Flatly/bootswatch";
+
+// Amelia
+// Cerulean
+// Cosmo
+// Cyborg
+// Darkly
+// Flatly
+// Journal
+// Lumen
+// Paper
+// Readable
+// Sandstone
+// Simplex
+// Slate
+// Spacelab
+// Superhero
+// United
+// Yeti
