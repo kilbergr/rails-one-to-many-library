@@ -1,0 +1,6 @@
+<h1>Authors</h1>
+<% @authors.each do |author| %>
+	<div><%= author.first_name %> <%= author.last_name %>, <%= author.age %> years old.</div>
+	<%= link_to "More About #{author.last_name}", author_path(author) %>
+<% end %>
+

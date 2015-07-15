@@ -1,0 +1,3 @@
+<h1><%= @author.first_name %> <%= @author.last_name %></h1>
+<%= @author.last_name %> is <%= @author.age %> years old.
+<%= link_to "Books by #{@author.first_name} #{@author.last_name}", author_books_path(@author) %>

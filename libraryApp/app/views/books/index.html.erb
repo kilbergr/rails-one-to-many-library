@@ -1,0 +1,10 @@
+<h1>Books by <%= @author.first_name %> <%= @author.last_name %></h1>
+<%= link_to "Add Book", new_author_book_path(@author) %>
+
+<% @author.books.each do |book| %>
+	<h3><%= book.title %></h3>
+	<p><%= book.description %></p>
+<%= link_to "More Information about #{book.title}", book_path(book) %>
+<%= link_to "Edit #{book.title}", edit_book_path(book) %>
+
+<% end %>
